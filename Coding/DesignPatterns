@@ -1,0 +1,7 @@
+Aspect Oriented Programming
+	Add behavior to existing code without modifying the code itself
+	"Log all functions whose name begins with Set"
+	Separation of cross cutting concerns
+	
+	In C#
+		Could use decorators, have a "logged class" that decorates a class
