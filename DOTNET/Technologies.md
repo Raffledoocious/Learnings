@@ -7,4 +7,10 @@ Cake
 	C# DSL
 	Includes most common tools
 	Runs on top of Rosyln, open source, modern .NET platforms
+
+Rosyln
+    Open source implementation of C# and Visual Basic compiler with API for building code analysis tools
+    .NET Compiler Platform SDK, hooks into analyzers and code fixes
+    Analyzers for your own third party libraries
+    Enforce code standards
 	

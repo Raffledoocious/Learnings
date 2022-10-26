@@ -65,6 +65,16 @@ AWS
 	
 	ParameterStore
 		Hosted secrets management, just straight string management
+
+    Lambda
+        Extensions
+            A way to integrate with external tools like monitoring and governance
+            Automatically instrument code without changes
+            Can be installed in a container or as a layer
+            Builds on an existing API to hook into Lambda execution
+
+        Layers
+            A way to add in additional runtime processes for a lambda
 		
 	Secret Manager
 		Store credentials, API keys, and other secrets, consumed by other apps

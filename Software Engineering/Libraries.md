@@ -36,3 +36,16 @@ SourceGraph
 	https://about.sourcegraph.com/
 	GitHub interaction for repository searching and discovery
 	Target vulnterabilities, find issues
+
+Protocol Buffers
+    Message formats are defined in their own .proto file
+    Portable, space efficient, automated
+    Protobuffer compiler will implements the encoding and parsing of data in an efficient binary format
+    Define messages as aggregations of typed fields
+    Compiler will generate the C# files as needed
+    You tag fields with tag numbers (string number = 1;), this defines what the field uses in binary encoding
+
+    Backwards compatability
+        Must not change the tag numbers
+        You CAN delete fields
+        You can add fields but you must use new tag numbers
