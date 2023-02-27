@@ -63,8 +63,17 @@ AWS
 		Allows successful deployment, canary, rollback, alarms
 		Can manage via the AWS console
 	
-	ParameterStore
+	Parameter Store
 		Hosted secrets management, just straight string management
+		
+		Vs Secret Manager
+			Different sizes, Secrets Manager offers 64Kb, Parameter Store offere 8Kb
+			You can encrypt either
+			Parameter store is not just secrets, think of it as general string store
+			Secret Manager allows different versions to be active at once when you are doing a key rotation
+				Uses labels to define this
+			Can access Secret Manager secrets across accounts
+		
 
     Lambda
         Extensions

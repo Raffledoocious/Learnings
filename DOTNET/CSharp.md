@@ -122,3 +122,36 @@ C#
 		Flattens list of lists into a single list
 		IEnumerable<PhoneNumber> phoneNumbers = people.SelectMany(p => p.PhoneNumbers);
 	
+Working with nulls in .NET 7
+  ??= 
+    Null coalescing operator
+    Returns values of left hand operand if null, otherwise evaluates the left hand operator
+
+    Example code:
+```
+int? value = null;
+
+Console.WriteLine(value is null); // true
+value ??= 10;
+Console.WriteLine(value); // 10
+```
+
+  null-forgiving operator
+    ```
+    #nullable enable
+public class Person
+{
+    public Person(string name) => Name = name ?? throw new ArgumentNullException(nameof(name));
+
+    public string Name { get; }
+}
+```
+
+  value! says to ignore/suppress the null warnings
+  When the compiler doesn't recognize it can't be null but you know it to be true
+  Has not effect at runtime, only used in static analysis, at runtime the value is evaluated
+
+Inline assignment
+- public int Value { get; set; } = 10;
+
+
